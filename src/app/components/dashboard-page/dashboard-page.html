@@ -1,1 +1,9 @@
 <p>dashboard-page works!</p>
+<ul>
+  @for (customer of customerArray; track $index) {
+  <li>
+    {{ customer | json }}
+  </li>
+}
+
+</ul>
