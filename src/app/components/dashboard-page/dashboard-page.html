@@ -1,9 +1,27 @@
-<p>dashboard-page works!</p>
-<ul>
-  @for (customer of customerArray; track $index) {
-  <li>
-    {{ customer | json }}
-  </li>
-}
+<!-- user-list.component.html -->
+<div class="container flex flex-col items-center" style="max-width:700px;margin:20px auto;">
+  <h2>Users</h2>
 
-</ul>
+  <form (ngSubmit)="submit()" [formGroup]="form" style="margin-bottom:16px">
+    <div>
+      <label>Name</label><br/>
+      <input formControlName="name" placeholder="Name" class="border-2 p-2" />
+    </div>
+    <div style="margin-top:8px">
+      <label>Email</label><br/>
+      <input formControlName="email" placeholder="Email" class="border-2 p-2" />
+    </div>
+
+    <div style="margin-top:12px">
+      <button type="submit" [disabled]="loading" class="border-2">Create</button>
+    </div>
+
+    <div *ngIf="error" style="color:red;margin-top:8px">{{ error }}</div>
+  </form>
+
+  <ul>
+    <li *ngFor="let u of users">
+      <strong>{{u.name}}</strong> — {{u.email}} <small>({{u.created_at | date:'short'}})</small>
+    </li>
+  </ul>
+</div>

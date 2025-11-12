@@ -7,7 +7,7 @@ import { DashboardPage } from "./components/dashboard-page/dashboard-page";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ButtonModule, Toast, DashboardPage],
+  imports: [RouterOutlet, ButtonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   providers: [MessageService]
