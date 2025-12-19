@@ -1,5 +1,5 @@
 <!-- user-list.component.html -->
-<div class="container flex flex-col items-center" style="max-width:700px;margin:20px auto;">
+<!-- <div class="container flex flex-col items-center" style="max-width:700px;margin:20px auto;">
   <h2>Users</h2>
 
   <form (ngSubmit)="submit()" [formGroup]="form" style="margin-bottom:16px">
@@ -24,4 +24,10 @@
       <strong>{{u.name}}</strong> — {{u.email}} <small>({{u.created_at | date:'short'}})</small>
     </li>
   </ul>
+</div> -->
+<div class="dashboard-page w-full h-screen p-4 flex gap-4 items-center justify-center">
+  <p-button label="create-new-design" severity="info" (click)="navigateToCreateNewDesign()" />
+  <p-button label="create-second-design" severity="info" (click)="navigateToCreateSecondDesign()" />
+  <p-button label="create-third-design" severity="info" (click)="navigateToCreateThirdDesign()" />
+  <!-- Add more dashboard content here -->
 </div>

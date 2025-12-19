@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService, User } from '../../services/api.service';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-page',
-  imports: [CommonModule, ReactiveFormsModule,],
+  imports: [CommonModule, ReactiveFormsModule, ButtonModule],
   templateUrl: './dashboard-page.html',
   styleUrl: './dashboard-page.scss',
 })
@@ -18,7 +20,8 @@ export class DashboardPage implements OnInit {
 
   constructor(
     private userService: ApiService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
   ) {
     this.form = this.fb.group({
       name: ['', Validators.required],
@@ -35,6 +38,18 @@ export class DashboardPage implements OnInit {
       data => this.users = data,
       err => this.error = 'Failed to load users'
     );
+  }
+
+  navigateToCreateNewDesign() {
+    this.router.navigate(['/create-new-design']);
+  }
+
+  navigateToCreateSecondDesign() {
+    this.router.navigate(['/create-second-design']);
+  }
+
+  navigateToCreateThirdDesign() {
+    this.router.navigate(['/create-third-design']);
   }
 
   submit() {
