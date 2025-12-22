@@ -1,4 +1,5 @@
-<div class="min-h-screen bg-gradient-to-b from-[#e8f4f8] via-[#d4e8f0] via-[#b8a8d8] via-[#9b7bb8] to-[#7d4e98] overflow-x-hidden">
+<div
+  class="min-h-screen bg-gradient-to-b from-[#e8f4f8] via-[#d4e8f0] via-[#b8a8d8] via-[#9b7bb8] to-[#7d4e98] overflow-x-hidden">
   <!-- Header -->
   <header class="flex justify-between items-center px-10 py-5 bg-white/15 backdrop-blur-md border-b border-white/20">
     <div class="flex items-center gap-3">
@@ -9,17 +10,20 @@
         <span class="text-xs font-normal text-gray-600">International Airport</span>
       </div>
     </div>
-    
+
     <div class="flex gap-3">
-      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+      <button
+        class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
         <span class="text-lg">✈️</span>
         <span>Arrivals</span>
       </button>
-      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+      <button
+        class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
         <span class="text-lg">📅</span>
         <span>Departures</span>
       </button>
-      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ff9500] to-[#ff8000] rounded-lg font-semibold text-sm text-white shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+      <button
+        class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ff9500] to-[#ff8000] rounded-lg font-semibold text-sm text-white shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
         <span class="text-lg">🕐</span>
         <span>10</span>
       </button>
@@ -30,149 +34,79 @@
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-10 py-8 max-w-[1600px] mx-auto">
     <!-- Arrivals Section -->
     <section>
-      <div class="flex items-center gap-3 mb-5 px-5 py-3 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-xl shadow-lg">
+      <div
+        class="flex items-center gap-3 mb-5 px-5 py-3 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-xl shadow-lg">
         <span class="text-2xl">✈️</span>
         <h2 class="text-xl font-bold text-gray-800 m-0">Arrivals</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <!-- Flight Card 1 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
-            </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
-          </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
-            </div>
-          </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
-          </div>
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+        <!-- Flight Card -->
+        <div *ngFor="let flight of flights"
+          class="bg-white/95 backdrop-blur-sm rounded-[32px] p-7 shadow-xl relative max-w-[330px] max-h-[260px]">
 
-        <!-- Flight Card 2 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
+          <!-- Header with Airline Logo and Status -->
+          <div class="flex justify-between items-start mb-1">
+            <div class="bg-[#1e3a8a] px-2 shadow-sm inline-flex items-center gap-2">
+              <span class="text-white font-xs text-xs tracking-wide">{{ flight.airlineName }}</span>
+              <span class="text-white text-xs">✈️</span>
             </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
-          </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
+            <div class="px-2 rounded-[5px] shadow-md" [style.backgroundColor]="flight.statusColor">
+              <span class="text-white font-xs text-xs">{{ flight.arrivalMessage }}</span>
             </div>
           </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
-          </div>
-        </div>
 
-        <!-- Flight Card 3 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
-            </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
+          <!-- Flight Number -->
+          <div class="mb-4">
+            <h1 class="text-[26px] font-black text-gray-900 tracking-tight leading-none">{{ flight.flightNumber }}</h1>
           </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
-            </div>
-          </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
-          </div>
-        </div>
 
-        <!-- Flight Card 4 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
+          <!-- Route Information -->
+          <div class="mb-7 space-y-3.5">
+            <!-- From Location -->
+            <div class="flex items-center gap-4">
+              <svg class="w-[18px] h-[18px] text-[#3565EC]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="text-sm text-gray-600 font-medium">From</span>
+              <span class="text-[18px] font-bold text-gray-900 ml-auto leading-none">{{ flight.destination }} ({{
+                flight.destinationCode }})</span>
             </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
-          </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
+
+            <!-- Schedule Time -->
+            <div class="flex items-center gap-4">
+              <div class="w-8 h-8 bg-[#3b82f6] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-[18px] h-[18px] text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+              <span class="text-sm text-gray-600 font-medium">SCH</span>
+              <span class="text-lg font-bold text-gray-900 ml-auto leading-none">{{ flight.eta }}</span>
             </div>
           </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
+
+          <!-- Progress Dots -->
+          <div class="flex gap-[6px] mb-3 flex-wrap">
+            <span *ngFor="let i of getDotArray(flight.totalDots); let idx = index"
+              class="w-[5px] h-[5px] rounded-full transition-all"
+              [ngClass]="(idx + 1) <= flight.progressDots ? 'bg-gray-700' : 'bg-gray-300'">
+            </span>
           </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
+
+          <!-- Seat Information Buttons -->
+          <div class="flex gap-4">
+            <button
+              class="bg-[#F3BFF5] px-2 rounded-[4px] text-[16px] text-gray-900 shadow-sm transition-all hover:shadow-md">
+              {{ flight.beltNumber }}
+            </button>
+            <button
+              class="bg-[#197EDF] px-2 rounded-[4px] text-[16px] text-white shadow-sm transition-all hover:shadow-md">
+              {{ flight.standNumber }}
+            </button>
           </div>
         </div>
       </div>
@@ -189,7 +123,7 @@
         <div class="mb-5">
           <h3 class="m-0 text-lg font-bold text-gray-800">Upcoming Flight</h3>
         </div>
-        
+
         <div class="bg-gradient-to-br from-[#e8f4f8] to-[#d4e8f0] rounded-2xl p-5 mb-5">
           <div class="flex justify-between items-start mb-5">
             <div class="flex items-center gap-3">
@@ -199,7 +133,7 @@
                 <div>EXPRESS</div>
               </div>
             </div>
-            
+
             <div class="text-right">
               <span class="block text-5xl font-black text-[#1a1a2e] leading-none mb-2">IX-234</span>
               <div class="flex gap-2 justify-end">
