@@ -1,18 +1,22 @@
 <!-- src/app/chatbot/chatbot.component.html -->
 <div class="chat-wrapper">
   <div #scrollContainer class="messages">
-    <div *ngFor="let m of messages" class="message-row" [ngClass]="{'user': m.role === 'user', 'assistant': m.role === 'assistant'}">
-      <div class="bubble">
-        <span class="text">{{ m.content }}</span>
+    @for (m of messages; track m) {
+      <div class="message-row" [ngClass]="{'user': m.role === 'user', 'assistant': m.role === 'assistant'}">
+        <div class="bubble">
+          <span class="text">{{ m.content }}</span>
+        </div>
       </div>
-    </div>
+    }
 
     <!-- Loading indicator -->
-    <div *ngIf="loading" class="message-row assistant">
-      <div class="bubble">
-        <span class="text">…thinking</span>
+    @if (loading) {
+      <div class="message-row assistant">
+        <div class="bubble">
+          <span class="text">…thinking</span>
+        </div>
       </div>
-    </div>
+    }
   </div>
 
   <div class="composer">
@@ -21,7 +25,7 @@
       (keydown)="onEnter($event)"
       placeholder="Type a message and press Enter to send"
       rows="1"
-      ></textarea>
+    ></textarea>
 
     <button (click)="send()" [disabled]="loading" class="send-btn">Send</button>
   </div>
