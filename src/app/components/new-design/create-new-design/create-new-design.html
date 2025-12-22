@@ -1,1 +1,246 @@
-<p>create-new-design works!</p>
+<div class="min-h-screen bg-gradient-to-b from-[#e8f4f8] via-[#d4e8f0] via-[#b8a8d8] via-[#9b7bb8] to-[#7d4e98] overflow-x-hidden">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-10 py-5 bg-white/15 backdrop-blur-md border-b border-white/20">
+    <div class="flex items-center gap-3">
+      <span class="text-2xl font-bold text-[#e63946]">adani</span>
+      <span class="text-2xl text-gray-800">|</span>
+      <div class="flex flex-col">
+        <span class="text-sm font-semibold text-gray-800 leading-tight">Navi Mumbai</span>
+        <span class="text-xs font-normal text-gray-600">International Airport</span>
+      </div>
+    </div>
+    
+    <div class="flex gap-3">
+      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+        <span class="text-lg">✈️</span>
+        <span>Arrivals</span>
+      </button>
+      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+        <span class="text-lg">📅</span>
+        <span>Departures</span>
+      </button>
+      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ff9500] to-[#ff8000] rounded-lg font-semibold text-sm text-white shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+        <span class="text-lg">🕐</span>
+        <span>10</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-10 py-8 max-w-[1600px] mx-auto">
+    <!-- Arrivals Section -->
+    <section>
+      <div class="flex items-center gap-3 mb-5 px-5 py-3 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-xl shadow-lg">
+        <span class="text-2xl">✈️</span>
+        <h2 class="text-xl font-bold text-gray-800 m-0">Arrivals</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Flight Card 1 -->
+        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center gap-2">
+              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
+              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
+            </div>
+            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
+          </div>
+          <div class="mb-3">
+            <div class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="font-semibold">Pune</span>
+              <span class="text-gray-400">→</span>
+              <span class="font-semibold">New Delhi (DEL)</span>
+            </div>
+          </div>
+          <div class="flex gap-5 mb-3">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETD</span>
+              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETA</span>
+              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <span class="text-sm">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="flex gap-2">
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
+          </div>
+        </div>
+
+        <!-- Flight Card 2 -->
+        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center gap-2">
+              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
+              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
+            </div>
+            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
+          </div>
+          <div class="mb-3">
+            <div class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="font-semibold">Pune</span>
+              <span class="text-gray-400">→</span>
+              <span class="font-semibold">New Delhi (DEL)</span>
+            </div>
+          </div>
+          <div class="flex gap-5 mb-3">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETD</span>
+              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETA</span>
+              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <span class="text-sm">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="flex gap-2">
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
+          </div>
+        </div>
+
+        <!-- Flight Card 3 -->
+        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center gap-2">
+              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
+              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
+            </div>
+            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
+          </div>
+          <div class="mb-3">
+            <div class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="font-semibold">Pune</span>
+              <span class="text-gray-400">→</span>
+              <span class="font-semibold">New Delhi (DEL)</span>
+            </div>
+          </div>
+          <div class="flex gap-5 mb-3">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETD</span>
+              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETA</span>
+              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <span class="text-sm">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="flex gap-2">
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
+          </div>
+        </div>
+
+        <!-- Flight Card 4 -->
+        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex items-center gap-2">
+              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
+              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
+            </div>
+            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
+          </div>
+          <div class="mb-3">
+            <div class="flex items-center gap-2 text-sm text-gray-600">
+              <span class="font-semibold">Pune</span>
+              <span class="text-gray-400">→</span>
+              <span class="font-semibold">New Delhi (DEL)</span>
+            </div>
+          </div>
+          <div class="flex gap-5 mb-3">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETD</span>
+              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 font-semibold">ETA</span>
+              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <span class="text-sm">⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="flex gap-2">
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
+            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Flight Section -->
+    <section class="relative">
+      <div class="text-center mb-5 px-5 py-5 bg-white/10 backdrop-blur-md rounded-2xl">
+        <p class="m-0 mb-2 text-base text-gray-800 font-medium">The wait is over</p>
+        <h1 class="m-0 text-3xl font-black text-[#1a1a2e] tracking-wide">NMIAL taken off!</h1>
+      </div>
+
+      <div class="bg-white/95 rounded-3xl p-6 shadow-2xl relative overflow-hidden">
+        <div class="mb-5">
+          <h3 class="m-0 text-lg font-bold text-gray-800">Upcoming Flight</h3>
+        </div>
+        
+        <div class="bg-gradient-to-br from-[#e8f4f8] to-[#d4e8f0] rounded-2xl p-5 mb-5">
+          <div class="flex justify-between items-start mb-5">
+            <div class="flex items-center gap-3">
+              <span class="text-3xl">✈️</span>
+              <div class="text-xs font-bold text-gray-800 leading-tight">
+                <div>AIR INDIA</div>
+                <div>EXPRESS</div>
+              </div>
+            </div>
+            
+            <div class="text-right">
+              <span class="block text-5xl font-black text-[#1a1a2e] leading-none mb-2">IX-234</span>
+              <div class="flex gap-2 justify-end">
+                <span class="bg-[#ff6b6b] text-white px-3 py-1 rounded-xl text-xs font-bold">HOT</span>
+                <span class="bg-[#667eea] text-white px-3 py-1 rounded-xl text-xs font-bold">NEW DELHI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mb-5">
+            <div class="flex items-baseline justify-center gap-1 mb-2">
+              <span class="text-4xl font-black text-[#1a1a2e]">1h 23</span>
+              <span class="text-lg font-semibold text-gray-600">min</span>
+            </div>
+            <div class="flex items-center justify-center gap-3 text-lg font-bold text-gray-800">
+              <span>DEL</span>
+              <span class="text-gray-400">→</span>
+              <span>NMI</span>
+            </div>
+          </div>
+
+          <div class="flex gap-5 justify-center">
+            <div class="flex items-center gap-2 px-4 py-2 bg-white/70 rounded-xl">
+              <span class="text-base">📅</span>
+              <span class="text-sm font-semibold text-gray-800">Jan 20</span>
+            </div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-white/70 rounded-xl">
+              <span class="text-base">👤</span>
+              <span class="text-sm font-semibold text-gray-800">Economy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute -right-12 top-1/2 -translate-y-1/2 w-[400px] h-[300px] opacity-90 pointer-events-none">
+          <img src="/Group 1171292016.svg" alt="Airplane" class="w-full h-full object-contain" />
+        </div>
+      </div>
+
+      <div class="text-center mt-5 text-sm text-[#1a1a2e] font-medium">
+        Powered by <strong class="font-bold text-[#667eea]">avilo</strong>
+      </div>
+    </section>
+  </div>
+</div>
