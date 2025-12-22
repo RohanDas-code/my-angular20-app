@@ -1,223 +1,164 @@
-<div class="min-h-screen bg-cover bg-center bg-no-repeat overflow-x-hidden" style="background-image: url('/page-bg.svg')">
+<div class="min-h-screen bg-cover bg-center bg-no-repeat overflow-x-hidden"
+  style="background-image: url('/page-bg.svg')">
   <!-- Header -->
-  <header class="flex justify-between items-center px-10 py-5 bg-white/15 backdrop-blur-md border-b border-white/20">
-    <div class="flex items-center gap-3">
-      <span class="text-2xl font-bold text-[#e63946]">adani</span>
-      <span class="text-2xl text-gray-800">|</span>
-      <div class="flex flex-col">
-        <span class="text-sm font-semibold text-gray-800 leading-tight">Navi Mumbai</span>
-        <span class="text-xs font-normal text-gray-600">International Airport</span>
-      </div>
+  <header class="flex justify-between items-center px-8 py-3 bg-transparent">
+    <div class="w-[15%]">
+      <img src="./adani-umi-logo.svg" alt="">
     </div>
-    
-    <div class="flex gap-3">
-      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
-        <span class="text-lg">✈️</span>
-        <span>Arrivals</span>
-      </button>
-      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
-        <span class="text-lg">📅</span>
-        <span>Departures</span>
-      </button>
-      <button class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-br from-[#ff9500] to-[#ff8000] rounded-lg font-semibold text-sm text-white shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
-        <span class="text-lg">🕐</span>
-        <span>10</span>
-      </button>
+
+    <div class="flex gap-4">
+      <!-- Arrivals Card -->
+      <div class="flex items-center gap-6 px-3 py-3 bg-white rounded-2xl"
+        style="box-shadow: 0px 3.58px 7.7px 0px #C2C2C21A, 0px 14.3px 14.3px 0px #C2C2C217, 0px 31.9px 19.25px 0px #C2C2C20D, 0px 56.65px 22.83px 0px #C2C2C203, 0px 88.55px 24.75px 0px #C2C2C200;">
+        <div class="flex items-center gap-2">
+          <div class="w-12 h-12 bg-[#FFC107] rounded-xl flex items-center justify-center">
+            <img src="./flight-down.svg" alt="">
+
+          </div>
+          <div class="text-md font-semibold text-[#2D343F] mb-1">Arrived:</div>
+        </div>
+        <div>
+
+          <p class="text-2xl font-bold text-gray-900">5<span class="text-gray-500">/15</span></p>
+        </div>
+      </div>
+
+      <!-- Departed Card -->
+      <div class="flex items-center gap-3 px-3 py-3 bg-white rounded-2xl"
+        style="box-shadow: 0px 3.58px 7.7px 0px #C2C2C21A, 0px 14.3px 14.3px 0px #C2C2C217, 0px 31.9px 19.25px 0px #C2C2C20D, 0px 56.65px 22.83px 0px #C2C2C203, 0px 88.55px 24.75px 0px #C2C2C200;">
+        <div class="flex items-center gap-2">
+          <div class="w-12 h-12 bg-[#FFC107] rounded-xl flex items-center justify-center">
+            <img src="./flight-up.svg" alt="">
+          </div>
+          <div class="text-md font-semibold text-[#2D343F] mb-1">Departed:</div>
+        </div>
+        <div>
+
+          <p class="text-2xl font-bold text-gray-900">10<span class="text-gray-500">/15</span></p>
+        </div>
+      </div>
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <div class="text-center px-10 pt-8 pb-4 max-w-[1600px] mx-auto">
+    <p class="m-0 mb-2 text-xl text-black font-medium">The wait is over</p>
+    <h1 class="m-0 text-3xl font-black text-[#1a1a2e] tracking-wide">NMIAL has taken off!</h1>
+  </div>
+
   <!-- Main Content -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-10 py-8 max-w-[1600px] mx-auto">
-    <!-- Arrivals Section -->
-    <section>
-      <div class="flex items-center gap-3 mb-5 px-5 py-3 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-xl shadow-lg">
-        <span class="text-2xl">✈️</span>
-        <h2 class="text-xl font-bold text-gray-800 m-0">Arrivals</h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <!-- Flight Card 1 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
-            </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
+  <div class="px-10 py-4 max-w-[1600px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-6">
+      <!-- Arrivals Section -->
+      <section>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-[#FFC107] rounded-lg flex items-center justify-center">
+            <img src="./flight-down.svg" alt="" class="w-5 h-5">
           </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
-            </div>
-          </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
-          </div>
+          <h2 class="text-xl font-bold text-[#2D343F]">Arrivals</h2>
         </div>
 
-        <!-- Flight Card 2 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
+        <div class="grid grid-cols-2 gap-3">
+          @for (flight of flights; track $index) {
+          <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+
+            <!-- Header with Airline Logo and Status -->
+            <div class="flex justify-between items-start mb-2">
+              <div class="bg-[#4C5FD5] px-2 py-0.5 rounded shadow-sm inline-flex items-center gap-1.5">
+                <span class="text-white font-semibold text-[10px] tracking-wide">{{ flight.airlineName }}</span>
+                <span class="text-white text-[10px]">✈️</span>
+              </div>
+              <div class="px-2 py-0.5 rounded shadow-sm" [style.backgroundColor]="flight.statusColor">
+                <span class="text-white font-medium text-[10px]">{{ flight.arrivalMessage }}</span>
+              </div>
             </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
-          </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
+
+            <!-- Flight Number -->
+            <div class="mb-3">
+              <h1 class="text-[22px] font-black text-gray-900 tracking-tight leading-none">{{ flight.flightNumber }}
+              </h1>
+            </div>
+
+            <!-- Route Information -->
+            <div class="mb-4 space-y-2">
+              <!-- From Location -->
+              <div class="flex items-center gap-2">
+                <svg class="w-3.5 h-3.5 text-[#4C5FD5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span class="text-xs text-gray-600 font-medium">From</span>
+                <span class="text-sm font-bold text-gray-900 ml-auto leading-none">{{ flight.destination }} ({{
+                  flight.destinationCode }})</span>
+              </div>
+
+              <!-- Schedule Time -->
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-[#4C5FD5] rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <span class="text-xs text-gray-600 font-medium">SCH</span>
+                <span class="text-base font-bold text-gray-900 ml-auto leading-none">{{ flight.eta }}</span>
+              </div>
+            </div>
+
+            <!-- Progress Dots -->
+            <div class="flex gap-1 mb-3 flex-wrap">
+              <span *ngFor="let i of getDotArray(flight.totalDots); let idx = index"
+                class="w-1 h-1 rounded-full transition-all"
+                [ngClass]="(idx + 1) <= flight.progressDots ? 'bg-gray-700' : 'bg-gray-300'">
+              </span>
+            </div>
+
+            <!-- Seat Information Buttons -->
+            <div class="flex gap-2">
+              <button
+                class="bg-[#FFC107] px-3 py-1 rounded text-xs font-semibold text-gray-900 shadow-sm transition-all hover:shadow-md">
+                {{ flight.beltNumber }}
+              </button>
+              <button
+                class="bg-[#2196F3] px-3 py-1 rounded text-xs font-semibold text-white shadow-sm transition-all hover:shadow-md">
+                {{ flight.standNumber }}
+              </button>
             </div>
           </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
-          </div>
+          }
         </div>
+      </section>
 
-        <!-- Flight Card 3 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
-            </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
-          </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
-            </div>
-          </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
-          </div>
-        </div>
+      <!-- Upcoming Flight Carousel Section -->
+      <section class="relative">
 
-        <!-- Flight Card 4 -->
-        <div class="bg-white/95 rounded-2xl p-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-          <div class="flex justify-between items-center mb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-[#1a1a2e] text-white px-2 py-1 rounded-md font-bold text-xs">6E</span>
-              <span class="font-semibold text-gray-800 text-sm">6E-1246</span>
-            </div>
-            <span class="bg-[#4caf50] text-white px-3 py-1 rounded-xl text-xs font-bold">LANDED</span>
-          </div>
-          <div class="mb-3">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <span class="font-semibold">Pune</span>
-              <span class="text-gray-400">→</span>
-              <span class="font-semibold">New Delhi (DEL)</span>
-            </div>
-          </div>
-          <div class="flex gap-5 mb-3">
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETD</span>
-              <span class="text-sm font-bold text-gray-800">3:00 PM</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="text-xs text-gray-400 font-semibold">ETA</span>
-              <span class="text-sm font-bold text-gray-800">5:02 PM</span>
-            </div>
-          </div>
-          <div class="mb-3">
-            <span class="text-sm">⭐⭐⭐⭐⭐</span>
-          </div>
-          <div class="flex gap-2">
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#ffd60a] to-[#ffc300] rounded-lg font-semibold text-sm text-gray-800 hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">Book</button>
-            <button class="flex-1 px-4 py-2 bg-gradient-to-br from-[#667eea] to-[#764ba2] rounded-lg font-semibold text-sm text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300">View More</button>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Carousel Container - overflow visible to show airplane extending beyond -->
+        <div class="relative rounded-3xl shadow-2xl overflow-visible" (mouseenter)="stopAutoSlide()"
+          (mouseleave)="startAutoSlide()">
 
-    <!-- Carousel Slider Section -->
-    <section class="relative">
-      <div class="text-center mb-5 px-5 py-5 bg-white/10 backdrop-blur-md rounded-2xl">
-        <p class="m-0 mb-2 text-base text-gray-800 font-medium">The wait is over</p>
-        <h1 class="m-0 text-3xl font-black text-[#1a1a2e] tracking-wide">NMIAL taken off!</h1>
-      </div>
-
-      <!-- Carousel Container - overflow visible to show airplane extending beyond -->
-      <div class="relative rounded-3xl shadow-2xl overflow-visible" 
-           (mouseenter)="stopAutoSlide()" 
-           (mouseleave)="startAutoSlide()">
-        
-        <!-- Airplane Images - Outside slides container to avoid clipping -->
-        @for (slide of slides; track $index) {
-          <div 
-            class="absolute -right-8 -top-20 w-[60%] h-[55%] z-50 transition-all duration-700 ease-in-out"
-            [class.opacity-100]="currentSlide === $index"
-            [class.opacity-0]="currentSlide !== $index"
-            [class.translate-x-0]="currentSlide === $index"
-            [class.translate-x-full]="currentSlide < $index"
+          <!-- Airplane Images - Outside slides container to avoid clipping -->
+          @for (slide of slides; track $index) {
+          <div class="absolute -right-8 -top-20 w-[60%] h-[55%] z-50 transition-all duration-700 ease-in-out"
+            [class.opacity-100]="currentSlide === $index" [class.opacity-0]="currentSlide !== $index"
+            [class.translate-x-0]="currentSlide === $index" [class.translate-x-full]="currentSlide < $index"
             [class.-translate-x-full]="currentSlide > $index">
             <img src="/fligh-photo.svg" alt="Airplane" class="w-full h-full object-contain" />
           </div>
-        }
-        
-        <!-- Slides -->
-        <div class="relative h-[450px] overflow-hidden rounded-3xl">
-          @for (slide of slides; track $index) {
-            <div 
-              class="absolute inset-0 transition-all duration-700 ease-in-out"
-              [class.opacity-100]="currentSlide === $index"
-              [class.opacity-0]="currentSlide !== $index"
-              [class.translate-x-0]="currentSlide === $index"
-              [class.translate-x-full]="currentSlide < $index"
+          }
+
+          <!-- Slides -->
+          <div class="relative h-[500px] overflow-hidden rounded-3xl">
+            @for (slide of slides; track $index) {
+            <div class="absolute inset-0 transition-all duration-700 ease-in-out"
+              [class.opacity-100]="currentSlide === $index" [class.opacity-0]="currentSlide !== $index"
+              [class.translate-x-0]="currentSlide === $index" [class.translate-x-full]="currentSlide < $index"
               [class.-translate-x-full]="currentSlide > $index">
-              
+
               <!-- Slide Content with Full Background -->
-              <div class="relative h-full w-full bg-cover bg-center"
-                   [style.background-image]="'url(/slider-bg.svg)'">
-                
+              <div class="relative h-full w-full bg-cover bg-center" [style.background-image]="'url(/slider-bg.svg)'">
+
                 <!-- Wave Overlay - Middle Position (z-index: 10) -->
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-48 z-10">
                   <img src="/Adani-Wave.svg" alt="Wave" class="w-full h-full object-cover" />
@@ -226,33 +167,36 @@
                 <!-- Flight Header Info - Top Left (z-index: 20) -->
                 <div class="absolute left-6 top-6 z-20">
                   <p class="text-xl font-semibold text-[#464646] mb-3">Upcoming Flight</p>
-                  
+
                   <div class="flex items-center gap-3 mb-4">
                     @if (slide.airlineLogo === 'express') {
-                      <img src="/air-india.svg" alt="Air India" class="h-8 w-auto" />
+                    <img src="/air-india.svg" alt="Air India" class="h-8 w-auto" />
                     } @else {
-                      <!-- <div class="flex items-center gap-2">
+                    <!-- <div class="flex items-center gap-2">
                         <span class="text-2xl text-purple-600">✈</span>
                         <span class="text-sm font-bold text-purple-600">{{ slide.airline }}</span>
                       </div> -->
-                      <img src="/air-india.svg" alt="Air India" class="h-8 w-auto" />
+                    <img src="/air-india.svg" alt="Air India" class="h-8 w-auto" />
                     }
                   </div>
-                  
+
                   <div class="flex items-center gap-3 mb-3">
                     <h2 class="text-3xl font-semibold text-black leading-none">{{ slide.flightNumber }}</h2>
-                    <span class="bg-[#EBC409] text-black px-2 py-1.5 rounded text-sm font-medium"><img src="/flight-down.svg" alt="Flight" class="w-6 h-6" /></span>
+                    <span class="bg-[#EBC409] text-black px-2 py-1.5 rounded text-sm font-medium"><img
+                        src="/flight-down.svg" alt="Flight" class="w-6 h-6" /></span>
                   </div>
-                  
+
                   <div class="flex items-center gap-3 mb-3">
                     <span class="bg-[#197EDF] text-white px-2 py-1 rounded text-sm font-medium">{{ slide.stand }}</span>
-                    <span class="bg-[#EBC409] text-black px-2 py-1.5 rounded text-sm font-medium">{{ slide.gate }}</span>
+                    <span class="bg-[#EBC409] text-black px-2 py-1.5 rounded text-sm font-medium">{{ slide.gate
+                      }}</span>
                   </div>
                 </div>
 
                 <!-- Flight Details Card - Bottom Left (z-index: 20) -->
-                <div class="absolute left-6 bottom-6 bg-white/95 backdrop-blur-md rounded-2xl p-2 w-[35%] shadow-xl z-20">
-                  
+                <div
+                  class="absolute left-6 bottom-6 bg-white/95 backdrop-blur-md rounded-2xl p-2 w-[35%] shadow-xl z-20">
+
                   <!-- Time Info -->
                   <div class="mb-2 bg-purple-50 rounded-xl p-4">
                     <p class="text-xs text-gray-600 mb-2 flex items-center gap-2">
@@ -294,43 +238,43 @@
                 </div>
               </div>
             </div>
-          }
-        </div>
+            }
+          </div>
 
-        <!-- Navigation Arrows - Hidden -->
-        <button 
-          (click)="prevSlide()"
-          class="hidden absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-30">
-          <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          </svg>
-        </button>
-        
-        <button 
-          (click)="nextSlide()"
-          class="hidden absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-30">
-          <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </button>
+          <!-- Navigation Arrows - Hidden -->
+          <button (click)="prevSlide()"
+            class="hidden absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-30">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
 
-        <!-- Slide Indicators - Hidden -->
-        <div class="hidden absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-30">
-          @for (slide of slides; track $index) {
-            <button
-              (click)="goToSlide($index)"
-              class="w-2 h-2 rounded-full transition-all duration-300"
-              [class.bg-white]="currentSlide === $index"
-              [class.w-8]="currentSlide === $index"
+          <button (click)="nextSlide()"
+            class="hidden absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-30">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+
+          <!-- Slide Indicators - Hidden -->
+          <div class="hidden absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-30">
+            @for (slide of slides; track $index) {
+            <button (click)="goToSlide($index)" class="w-2 h-2 rounded-full transition-all duration-300"
+              [class.bg-white]="currentSlide === $index" [class.w-8]="currentSlide === $index"
               [class.bg-white/50]="currentSlide !== $index">
             </button>
-          }
+            }
+          </div>
         </div>
-      </div>
-
-      <div class="text-center mt-5 text-sm text-[#1a1a2e] font-medium">
-        Powered by <strong class="font-bold text-[#667eea]">avilo</strong>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
+
+  <!-- Footer - Powered by aviio -->
+  <footer class="w-full py-2 ">
+    <div class="flex items-center justify-center gap-2">
+      <span class="text-gray-700 text-sm font-medium">Powered by</span>
+      <img src="./power-by-aviio.svg" alt="aviio" class="h-8">
+    </div>
+  </footer>
 </div>
