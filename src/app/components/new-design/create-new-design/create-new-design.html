@@ -64,11 +64,11 @@
 
             <!-- Header with Airline Logo and Status -->
             <div class="flex justify-between items-start mb-2">
-              <div class="bg-[#4C5FD5] px-2 py-0.5 rounded shadow-sm inline-flex items-center gap-1.5">
-                <span class="text-white font-semibold text-[10px] tracking-wide">{{ flight.airlineName }}</span>
-                <span class="text-white text-[10px]">✈️</span>
+              <div>
+                <img src="./card-indigo.svg" alt="">
               </div>
-              <div class="px-2 py-0.5 rounded shadow-sm" [style.backgroundColor]="flight.statusColor">
+              <div class="px-2 inline-flex items-center gap-1 py-1 rounded shadow-sm"
+                [style.backgroundColor]="flight.statusColor">
                 <span class="text-white font-medium text-[10px]">{{ flight.arrivalMessage }}</span>
               </div>
             </div>
@@ -80,14 +80,10 @@
             </div>
 
             <!-- Route Information -->
-            <div class="mb-4 space-y-2">
+            <div class="mb-4 space-y-3">
               <!-- From Location -->
               <div class="flex items-center gap-2">
-                <svg class="w-3.5 h-3.5 text-[#4C5FD5] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clip-rule="evenodd" />
-                </svg>
+                <img src="./card-location.svg" alt="">
                 <span class="text-xs text-gray-600 font-medium">From</span>
                 <span class="text-sm font-bold text-gray-900 ml-auto leading-none">{{ flight.destination }} ({{
                   flight.destinationCode }})</span>
@@ -95,12 +91,8 @@
 
               <!-- Schedule Time -->
               <div class="flex items-center gap-2">
-                <div class="w-6 h-6 bg-[#4C5FD5] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                      clip-rule="evenodd" />
-                  </svg>
+                <div class=" rounded-full flex items-center justify-center flex-shrink-0">
+                  <img src="./card-clock.svg" alt="">
                 </div>
                 <span class="text-xs text-gray-600 font-medium">SCH</span>
                 <span class="text-base font-bold text-gray-900 ml-auto leading-none">{{ flight.eta }}</span>
@@ -189,9 +181,10 @@
                   </div>
 
                   <div class="flex items-center gap-3 mb-3">
-                    <span class="bg-[#197EDF] text-white px-2 py-1 rounded text-sm font-medium">{{ slide.stand }}</span>
-                    <span class="bg-[#EBC409] text-black px-2 py-1.5 rounded text-sm font-medium">{{ slide.gate
+
+                    <span class="bg-[#EBC409] text-black px-2 py-0.5 rounded text-sm font-medium">{{ slide.gate
                       }}</span>
+                    <span class="bg-[#197EDF] text-white px-2 py-1 rounded text-sm font-medium">{{ slide.stand }}</span>
                   </div>
                 </div>
 
