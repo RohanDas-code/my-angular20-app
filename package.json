@@ -22,6 +22,7 @@
   },
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@angular/animations": "^21.0.6",
     "@angular/common": "^21.0.6",
     "@angular/compiler": "^21.0.6",
@@ -29,6 +30,15 @@
     "@angular/forms": "^21.0.6",
     "@angular/platform-browser": "^21.0.6",
     "@angular/router": "^21.0.6",
+=======
+    "@angular/animations": "^20.3.15",
+    "@angular/common": "^20.3.0",
+    "@angular/compiler": "^20.3.0",
+    "@angular/core": "^20.3.0",
+    "@angular/forms": "^20.3.0",
+    "@angular/platform-browser": "^20.3.0",
+    "@angular/router": "^20.3.0",
+>>>>>>> 6fc61b17a9f46316c80965f87c14769f34af72e8
     "@primeuix/themes": "^1.2.5",
     "postcss": "^8.5.6",
     "primeng": "^20.2.0",
