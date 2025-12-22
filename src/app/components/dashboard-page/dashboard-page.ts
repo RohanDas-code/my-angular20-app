@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService, User } from '../../services/api.service';
-import { CommonModule } from '@angular/common';
+
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-page',
-  imports: [CommonModule, ReactiveFormsModule, ButtonModule],
+  imports: [ReactiveFormsModule, ButtonModule],
   templateUrl: './dashboard-page.html',
   styleUrl: './dashboard-page.scss',
 })

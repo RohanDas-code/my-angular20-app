@@ -1,1 +1,99 @@
-<p>create-third-design works!</p>
+<!-- Overlay -->
+<div class="fixed inset-0 bg-neutral-900/80 flex items-center justify-center z-50 p-4 font-sans">
+
+  <!-- Confetti Layer -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <span *ngFor="let i of confetti" class="absolute w-2 h-4 rounded-sm animate-confetti" [ngStyle]="{
+        left: i.x + '%',
+        animationDelay: i.delay + 's',
+        backgroundColor: i.color
+      }"></span>
+  </div>
+
+  <!-- Main Card Container -->
+  <div class="relative w-full max-w-5xl mx-auto">
+
+    <!-- Card with Cloud Background -->
+    <div
+      class="rounded-3xl shadow-2xl overflow-visible relative z-10 min-h-[500px] flex flex-col md:flex-row bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/modalBackground.svg');">
+
+      <!-- Left Content Section -->
+      <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center z-20">
+
+        <p class="text-xl md:text-2xl text-slate-800 font-medium mb-4">
+          Congratulations to
+        </p>
+
+        <!-- IndiGo Logo -->
+        <img src="/image 504.svg" alt="IndiGo" class="h-12 w-auto object-contain mb-8 self-start" />
+
+        <!-- Flight Info -->
+        <div class="flex flex-wrap items-center gap-4 mb-8">
+          <h2 class="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight">6E-234</h2>
+          <div class="">
+            <img src="/small plane.svg" alt="IndiGo" class="h-12 w-15 object-contain self-start" />
+          </div>
+        </div>
+
+        <!-- Route Box -->
+        <div
+          class="inline-flex items-center bg-gray-50/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-4 gap-6 mb-8 shadow-sm w-fit">
+          <div class="text-center">
+            <span class="block text-3xl font-bold text-slate-900">DEL</span>
+            <span class="block text-xs text-slate-500 font-medium uppercase tracking-wide">Delhi</span>
+          </div>
+
+          <div class="text-purple-600 rotate-90 md:rotate-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </div>
+
+          <div class="text-center">
+            <span class="block text-3xl font-bold text-slate-900">NMI</span>
+            <span class="block text-xs text-slate-500 font-medium uppercase tracking-wide">Navi Mumbai</span>
+          </div>
+        </div>
+      <img
+  src="/Adani Wave.svg"
+  alt=""
+  class="absolute left-0 top-[160px] w-[112%] pointer-events-none -z-50"
+/>
+
+        <!-- Description Text -->
+        <div class="text-lg text-slate-700 leading-relaxed mb-8 max-w-md font-medium">
+          and the arriving <span class="font-bold text-slate-900">Passengers & Crew</span> on their
+          <span class="font-bold text-slate-900">1st flight</span> to
+          <span class="font-bold text-slate-900 block text-xl mt-1">Navi Mumbai International Airport</span>
+        </div>
+
+        <!-- Highlight Footer -->
+        <p class=" text-purple-700 font-bold text-lg items-end">
+          Here’s to many more journeys together!!
+        </p>
+      </div>
+
+      <!-- Right/Background Decorative Image Area -->
+      <!-- The plane image 'overflows' out of this container -->
+     <div
+  class="hidden md:block absolute -top-10 right-[-190px] w-[950px]  pointer-events-none z-30">
+  <img
+    src="/2 Plane Image 1.svg"
+    alt="Airplane"
+    class="w-full"
+  />
+</div>
+
+      <!-- Mobile Plane (visible only on small screens) -->
+      <div class="md:hidden w-full h-48 relative overflow-hidden mt-4">
+        <img src="/2 Plane Image 1.svg" alt="Airplane"
+          class="absolute w-[120%] max-w-none -right-10 top-0 object-cover" />
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
