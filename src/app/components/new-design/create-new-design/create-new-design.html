@@ -107,12 +107,14 @@
               </div>
             </div>
 
+
             <!-- Progress Dots -->
             <div class="flex gap-1 mb-3 flex-wrap">
-              <span *ngFor="let i of getDotArray(flight.totalDots); let idx = index"
-                class="w-1 h-1 rounded-full transition-all"
-                [ngClass]="(idx + 1) <= flight.progressDots ? 'bg-gray-700' : 'bg-gray-300'">
+              @for (i of getDotArray(flight.totalDots); track $index) {
+              <span class="w-1 h-1 rounded-full transition-all"
+                [ngClass]="($index + 1) <= flight.progressDots ? 'bg-gray-700' : 'bg-gray-300'">
               </span>
+              }
             </div>
 
             <!-- Seat Information Buttons -->
