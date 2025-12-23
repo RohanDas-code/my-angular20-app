@@ -26,7 +26,7 @@
         </p>
 
         <!-- IndiGo Logo -->
-        <img src="/image 504.svg" alt="IndiGo" class="h-12 w-auto object-contain mb-8 self-start" />
+        <img [src]="assets.logo" alt="IndiGo" class="h-12 w-auto object-contain mb-8 self-start" />
 
         <!-- Flight Info -->
         <div class="flex flex-wrap items-center gap-4 mb-8">
@@ -41,7 +41,9 @@
           class="inline-flex items-center bg-gray-50/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-4 gap-6 mb-8 shadow-sm w-fit">
           <div class="text-center">
             <span class="block text-3xl font-bold text-slate-900">DEL</span>
-            <span class="block text-xs text-slate-500 font-medium uppercase tracking-wide">Delhi</span>
+          <span class="block text-xs text-slate-500 font-medium uppercase tracking-wide text-left">
+  Delhi
+</span>
           </div>
 
           <div class="text-purple-600 rotate-90 md:rotate-0">
@@ -70,12 +72,12 @@
       <!-- Right/Background Decorative Image Area -->
       <!-- The plane image 'overflows' out of this container -->
       <div class="hidden md:block absolute top-10 right-[-170px] w-[850px]  pointer-events-none z-30">
-        <img src="/6E.svg" alt="Airplane" class="w-full" />
+        <img [src]="assets.plane" alt="Airplane" class="w-full" />
       </div>
 
       <!-- Mobile Plane (visible only on small screens) -->
       <div class="md:hidden w-full h-48 relative overflow-hidden mt-4">
-        <img src="/2 Plane Image 1.svg" alt="Airplane"
+        <img [src]="assets.mobilePlane" alt="Airplane"
           class="absolute w-[120%] max-w-none -right-10 top-0 object-cover" />
       </div>
 
