@@ -33,7 +33,7 @@ export class CreateThirdDesignComponent implements OnInit, OnDestroy {
       1: defaults,
       2: { logo: '/image 507.svg', plane: '/IX.svg', flightCode: 'IX-234' },
       3: { logo: '/image 506.svg', plane: '/QP.svg', flightCode: 'QP-234' },
-      4: { logo: '/Star Air.svg', plane: '/S5.svg', flightCode: 'S5-234' },
+      4: { logo: '/Star Air (600x290).svg', plane: '/S5.svg', flightCode: 'S5-234' },
     };
     return configs[this.designType] || defaults;
   }
