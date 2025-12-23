@@ -40,9 +40,9 @@
         <div
           class="inline-flex items-center bg-gray-50/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-4 gap-6 mb-8 shadow-sm w-fit">
           <div class="text-center">
-            <span class="block text-3xl font-bold text-slate-900">DEL</span>
+          <span class="block text-3xl font-bold text-slate-900">{{ route.origin }}</span>
           <span class="block text-xs text-[#4C596C] font-medium uppercase tracking-wide text-left">
-  Delhi
+  {{ route.originCity }}
 </span>
           </div>
 
@@ -51,8 +51,8 @@
           </div>
 
           <div class="text-center">
-            <span class="block text-3xl font-bold text-slate-900">NMI</span>
-            <span class="block text-xs text-[#4C596C] font-medium uppercase tracking-wide">Navi Mumbai</span>
+          <span class="block text-3xl font-bold text-slate-900">{{ route.dest }}</span>
+          <span class="block text-xs text-[#4C596C] font-medium uppercase tracking-wide">{{ route.destCity }}</span>
           </div>
         </div>
         <img src="/Adani Wave.svg" alt="" class="absolute left-0 top-[160px] w-[112%] pointer-events-none -z-50" />
@@ -66,7 +66,7 @@
 
 
        <div class="flex justify-end ">
-  <p class="text-[#7027A0] font-semibold text-2xl text-right">
+  <p class="text-[#7027A0] font-semibold text-2xl ">
     Here’s to many more journeys together!!
   </p>
 </div>

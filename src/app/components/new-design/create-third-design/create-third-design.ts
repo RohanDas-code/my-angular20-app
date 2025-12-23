@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CreateThirdDesignComponent implements OnInit, OnDestroy {
   @Input() designType: number = 1;
+  @Input() isArrival: boolean = true;
   private intervalId: any;
 
   ngOnInit() {
@@ -36,6 +37,13 @@ export class CreateThirdDesignComponent implements OnInit, OnDestroy {
       4: { logo: '/Star Air (600x290).svg', plane: '/S5.svg', flightCode: 'S5-234' },
     };
     return configs[this.designType] || defaults;
+  }
+
+  get route() {
+    if (this.isArrival) {
+      return { origin: 'DEL', originCity: 'Delhi', dest: 'NMI', destCity: 'Navi Mumbai' };
+    }
+    return { origin: 'NMI', originCity: 'Navi Mumbai', dest: 'DEL', destCity: 'Delhi' };
   }
 
   confetti = Array.from({ length: 70 }).map(() => ({
