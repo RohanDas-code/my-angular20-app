@@ -30,7 +30,7 @@
 
         <!-- Flight Info -->
         <div class="flex flex-wrap items-center gap-4 mb-8">
-          <h2 class="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight">6E-234</h2>
+          <h2 class="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight">{{ assets.flightCode }}</h2>
           <div class="">
             <img src="/small plane.svg" alt="IndiGo" class="h-12 w-15 object-contain self-start" />
           </div>
@@ -69,17 +69,10 @@
         </div>
       </div>
 
-      <!-- Right/Background Decorative Image Area -->
-      <!-- The plane image 'overflows' out of this container -->
       <div class="hidden md:block absolute top-10 right-[-170px] w-[850px]  pointer-events-none z-30">
         <img [src]="assets.plane" alt="Airplane" class="w-full" />
       </div>
 
-      <!-- Mobile Plane (visible only on small screens) -->
-      <div class="md:hidden w-full h-48 relative overflow-hidden mt-4">
-        <img [src]="assets.mobilePlane" alt="Airplane"
-          class="absolute w-[120%] max-w-none -right-10 top-0 object-cover" />
-      </div>
 
     </div>
 
